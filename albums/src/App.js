@@ -6,6 +6,8 @@ import {
 } from 'react-router-dom';
 import Album from './pages/Album'
 import AlbumDetail from './pages/AlbumDetail'
+// import Picture from './pages/Picture'
+
 
 export default function App() {
   return (
@@ -13,7 +15,8 @@ export default function App() {
       <div>
         <Switch>
           <Route exact path="/" component={Album}></Route>
-          <Route path="/detail/:id" component={AlbumDetail}></Route>
+          <Route path="/album/:id" component={AlbumDetail}></Route>
+          {/* <Route path="/images/:id" component={Picture}></Route> */}
         </Switch>
       </div>
     </Router>
